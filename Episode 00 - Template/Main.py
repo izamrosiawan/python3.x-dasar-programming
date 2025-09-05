@@ -1,4 +1,4 @@
 print("helo dunia!!!!!!!")
 print("apa kabar kalian?")
 print("instalasi berhasil")
-printf("ini coba coba bang")
+print("ini coba coba bang")

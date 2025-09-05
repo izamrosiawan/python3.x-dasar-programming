@@ -16,7 +16,7 @@ print(variable.data)
 print(kucuy.data)
 
 # 3. import dengan fungsi
-import matematika
+from matematika import tambah
 
-hasil = matematika.tambah(4,5)
+hasil = tambah(4,5)
 print(hasil)

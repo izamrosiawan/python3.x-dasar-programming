@@ -8,6 +8,7 @@ print(format_str)
 
 # boolean
 boolean = False
+# print (f"boolean = {boolean}")
 format_str = f"boolean = {boolean}"
 print(format_str)
 
@@ -22,7 +23,7 @@ format_str = f"bilangan bulat = {angka:d}"
 print(format_str)
 
 # bilangan dengan ordo ribuan
-angka = 2000000
+angka = 200000
 format_str = f"jutaan = {angka:,}"
 print(format_str)
 

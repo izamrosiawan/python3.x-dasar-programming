@@ -1,12 +1,15 @@
 import sains.matematika
-from sains import fisika
-from sains.fisika import gaya as force
+from sains import fisika 
+from sains.matematika import kali 
 
 hasil_tambah = sains.matematika.tambah(1,2,3,4,5)
 print(f"hasil tambah dari package adalah = {hasil_tambah}")
 
-gaya = fisika.gaya(90,10)
-print(f"gaya adalah = {gaya}")
+Gaya = fisika.gaya(90,10)
+print(f"\ngaya adalah = {Gaya}\n")
 
-gaya = force(90,10)
-print(f"gaya adalah = {gaya}")
+hasil_kali = kali(1,2,3,4,5)
+print(f"hasil kali dari package adalah = {hasil_kali}")
+
+# gaya = force(90,10)
+# print(f"gaya adalah = {gaya}")

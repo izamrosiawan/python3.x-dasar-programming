@@ -45,3 +45,10 @@ print(f"Hasil tambah = {k}")
 print(f"Hasil kurang = {l}")
 print(f"Hasil kali = {m}")
 print(f"Hasil bagi = {n}")
+
+# # atau bisa juga dengan cara ini
+# k = operasi_matematika(9,5)
+# print(f"Hasil tambah = {k[0]}")
+# print(f"Hasil kurang = {k[1]}")
+# print(f"Hasil kali = {k[2]}")
+# print(f"Hasil bagi = {k[3]}")

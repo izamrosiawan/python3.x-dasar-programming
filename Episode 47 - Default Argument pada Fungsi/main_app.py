@@ -40,3 +40,26 @@ def fungsi(input1=1,input2=2,input3=3,input4=4):
 
 print(fungsi())
 print(fungsi(input3=10))
+
+# contoh 5
+
+def operator_matematika(angka_1, angka_2, operasi="+"):
+    if operasi == "+":
+        return angka_1 + angka_2
+    elif operasi == "-":
+        return angka_1 - angka_2
+    elif operasi == "*":
+        return angka_1 * angka_2
+    elif operasi == "/":
+        return angka_1 / angka_2
+
+while True:
+    print ("\nKalkulator Sederhana")
+    operasi = input("\nMasukkan operasi (+, -, *, /) : ")
+    angka_1 = float(input("\nMasukkan angka pertama: "))
+    angka_2 = float(input("Masukkan angka kedua: "))
+    print(f"{angka_1} {operasi} {angka_2} = {operator_matematika(angka_1, angka_2, operasi)}")
+    lanjut = input("\nApakah Anda ingin melanjutkan? (y/n): ")
+    if lanjut.lower() != 'y':
+        print("\nTerima kasih telah menggunakan kalkulator sederhana!")
+        break

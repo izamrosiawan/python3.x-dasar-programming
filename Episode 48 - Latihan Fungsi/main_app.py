@@ -25,8 +25,8 @@ import os
 
 def header():
     '''fungsi Header'''
-    os.system("clear")
-    # os.system("cls")
+    # os.system("clear")
+    os.system("cls")
     print(f"{'PROGRAM MENGHITUNG LUAS':^40}")
     print(f"{'DAN KELILING PERSEGI PANJANG':^40}")
     print(f"{'-'*40:^40}")
@@ -34,7 +34,7 @@ def header():
 def input_user():
     '''fungsi input user'''
     # Mengambil input user
-    lebar = int(input("Masukan nilai lebar: "))
+    lebar = int(input("\nMasukan nilai lebar: "))
     panjang = int(input("Masukan nilai panjang: "))
 
     return lebar,panjang
@@ -49,21 +49,52 @@ def hitung_keliling(lebar,panjang):
 
 def display(message,value):
     '''fungsi display'''
-    print(f"hasil perhitungan {message} = {value}")
+    print(f"\nhasil perhitungan {message} = {value}")
+    
+def minta_input_opsi():
+    '''fungsi untuk meminta input opsi dari user'''
+    while True:
+        try:
+            opsi = int(input("Masukkan opsi (1-3): "))
+            if opsi in [1, 2, 3]:
+                return opsi
+            else:
+                print("\tOpsi tidak valid, silakan coba lagi.")
+        except ValueError:
+            print("\tInput harus berupa angka, silakan coba lagi.")
 
+def hitung_luas_keliling(lebar, panjang, opsi):
+    '''fungsi untuk menghitung luas dan keliling'''
+    if opsi == 1:
+        hasil = hitung_luas(lebar, panjang)
+        display("luas", hasil)
+    elif opsi == 2:
+        hasil = hitung_keliling(lebar, panjang)
+        display("keliling", hasil)
+    elif opsi == 3:
+        luas = hitung_luas(lebar, panjang)
+        keliling = hitung_keliling(lebar, panjang)
+        display("luas", luas)
+        display("keliling", keliling)
+    
 
 # Program utamanya
 while True:
     header()
+    
+    print('''
+    Operasi yang tersedia:  1. Hitung Luas
+                            2. Hitung Keliling
+                            3. Hitung Luas dan Keliling
+    ''')
+    
+    OPSI = minta_input_opsi()
     LEBAR,PANJANG = input_user()
-    LUAS = hitung_luas(LEBAR,PANJANG)
-    KELILING = hitung_keliling(LEBAR,PANJANG)
+    
+    hitung_luas_keliling(LEBAR, PANJANG, OPSI)
 
-    display("luas", LUAS)
-    display("keliling", KELILING)
-
-    isContinue = input("apakah lanjut (y/n)? ")
+    isContinue = input("\napakah lanjut (y/n)? ")
     if isContinue == "n":
         break
 
-print("Program selesai, terima kasih")
+print("\nProgram selesai, terima kasih")

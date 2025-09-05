@@ -17,7 +17,7 @@ for teman in teman_teman:
 keys = teman_teman.keys()
 print(keys)
 
-for key in teman_teman.keys():
+for key in keys:
 	print(teman_teman.get(key))
 
 values = teman_teman.values()
