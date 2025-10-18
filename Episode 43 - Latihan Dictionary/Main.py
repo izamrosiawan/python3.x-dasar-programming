@@ -15,8 +15,8 @@ mahasiswa_template = {
 data_mahasiswa = {}
 
 while True:
-	# os.system("cls") # untuk windows
-	os.system("clear")
+	os.system("cls") # untuk windows
+	# os.system("clear")
 	print(f"{'SELAMAT DATANG':^20}")
 	print(f"{'DATA MAHASISWA':^20}")
 	print("-"*20)

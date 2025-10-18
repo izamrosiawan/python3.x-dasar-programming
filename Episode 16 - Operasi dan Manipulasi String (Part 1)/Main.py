@@ -39,7 +39,7 @@ print("index ke-0 : " + nama_lengkap[0]) # dimulai dari 0
 print("index ke-6 : " + nama_lengkap[6]) # index bebas
 print("index ke-(-1) : " + nama_lengkap[-1]) # indexing dari dibelakang
 print("index ke-[6,8) : " + nama_lengkap[6:8]) # dimulai dari index 6 sampai sebelum 8
-print("index ke-[0,2,4,6,8] : " + nama_lengkap[0:10:2]) # diambil index 0,2,4,6,8
+print("index ke-[0,2,4,6,8] : " + nama_lengkap[0:11:2]) # diambil index 0,2,4,6,8
 
 # item paling kecil
 print("nilai terkecil : " + min(nama_lengkap))

@@ -7,7 +7,7 @@ import random
 # fungsi Header
 def header():
     # os.system("cls") # untuk windows
-    os.system("clear")
+    os.system("cls")
     print(f"{'SELAMAT DATANG':^20}")
     print(f"{'DATA MAHASISWA':^20}")
     print(f"{'TAHUN 2045':^20}")

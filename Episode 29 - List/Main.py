@@ -21,6 +21,7 @@ data_range = range(0,10,2) # range(start,stop,step)
 print(data_range)
 data_list = list(data_range)
 print(data_list)
+print(f"{list(range(0,10,3))}") # langsung membuat list dari range
 
 # membuat list dengan for loop, list comprehension
 list_pake_for = [i**2 for i in range(0,10)]

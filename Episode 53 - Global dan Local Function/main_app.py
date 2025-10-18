@@ -43,13 +43,13 @@ def ubah(nilai_baru, nama_baru):
     name = nama_baru
 
 print(f"Sebelum {angka,name}")
-ubah(10,"Otong")
+ubah(9,"Otong")
 print(f"Sesudah {angka,name}")
 
 ## contoh 3:
 angka = 0
 
-for i in range(0,5):
+for i in range(2,5):
     angka += i
     angka_dummy = 0
 

@@ -12,7 +12,7 @@ print(data_tuples[1])
 # data_tuples[1] = "ucup"
 # data_tuples.append(1)
 
-# sets (himpunan)
+# sets (himpunan) [gaada index dan tidak bisa diakses dengan index]
 data_sets = {10,4,3,2,4,7,6,5}
 print(data_sets)
 
